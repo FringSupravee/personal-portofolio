@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  background-color: #fefbf6;
+  color: #111d13;
+  line-height: 2;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.self-intro {
+  padding: 50px;
+  /* margin-bottom: 50px; */
+}
+
+h1.self-intro {
+  font-size: 80px;
+}
+
+.self-intro-picture {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.lineBreak {
+  margin-top: 10%;
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caseStudyPicture {
+  display: block;
+  margin-left: auto;
+  height: 20%;
+}
+
+
+
+/* Hover Animation CSS */
+.hovered-button-container {
+  position: relative;
+  height: 5rem;
+  max-width: 12rem;
+}
+
+.hover-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-button:hover{
+  text-decoration: none;
+}
+
+.hover-button:hover + .hover-animation-container {
+  opacity: 1;
+}
+
+.hover-animation-container {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+
+.hover-img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
