@@ -1,10 +1,13 @@
 * {
   margin: 0;
-  background-color: #fefbf6;
   color: #111d13;
   line-height: 2;
   text-align: left;
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fefbf6;
 }
 
 h1,
@@ -17,8 +20,9 @@ i {
 
 h2,
 h4,
-h5,
-h6 {
+h5, 
+H6 
+ {
   font-weight: 200;
   color: #111d13;
 }
@@ -29,9 +33,13 @@ a {
   color: #111d13;
 }
 
-.self-intro {
+.self-intro, .my-work-text {
   padding: 50px;
   /* margin-bottom: 50px; */
+}
+
+.my-work-text {
+  color: #C81676;
 }
 
 h1.self-intro {
@@ -46,6 +54,14 @@ h1.self-intro {
   margin-bottom: 50px;
 }
 
+.about-me-picture {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+  height: auto%;
+  margin-bottom: 50px;
+}
+
 .lineBreak {
   margin-top: 10%;
   max-width: 20%;
@@ -54,7 +70,10 @@ h1.self-intro {
   margin-left: auto;
   margin-right: auto;
 }
+.my-work-text{
+  padding-left: 50px;
 
+}
 footer {
   padding-left: 30px;
   padding-right: 30px;
@@ -70,26 +89,35 @@ footer {
   width: 100%;
   height: 10vh;
   display: flex;
+  background-color: #FFFCDF;
 }
 .nav-img-container {
   width: 100%;
   height: 100%;
   padding-left: 2rem;
+  background-color: #FFFCDF;
 }
 .nav-img {
   max-height: 100%;
   width: auto;
+  background-color: #FFFCDF;
 }
 .nav-links-container {
   display: flex;
   width: 60%;
   height: 100%;
   justify-content: space-around;
+  background-color: #FFFCDF;
 }
 .hovered-nav-container {
   position: relative;
   height: 100%;
   width: 100%;
+  background-color: #FFFCDF;
+}
+.nav-menu {
+  color: #C81676;
+  background-color: #FFFCDF;
 }
 /* Hover Animation CSS */
 .hovered-button-container {

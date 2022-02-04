@@ -5,23 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beaunity</title>
+    <link rel="icon" href="homepagePic/favicon.ico">
     <link rel="stylesheet" href="CSmoneyshare.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand justify-content-between">
-        <div></div>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active mr-4" href="homepage.html">Home</a>
-          <a class="nav-item nav-link mr-2" href="aboutme.html">About me</a>
-          <a class="nav-item nav-link mr-2" href="<!-- file-->  download">Download my CV</a>
+<nav class="nav-container">
+    <div class="nav-img-container">
+      <img src="homepagepic/logo2.png" alt="" class="nav-img">
+    </div>
+    <div class="nav-links-container">
+      <div class="hovered-nav-container">
+        <a href="homepage.html" class="hover-button button"><h6 class="nav-menu">Home</h6></a>
+        <div class="hover-animation-container">
+          <img src="homepagePic/hover.png" alt="" class="hover-img">
+          <a href="homepage.html" class="hover-button button"><h6 class="nav-menu">Home</h6></a>
         </div>
-    </nav>
-
-
+      </div>
+      <div class="hovered-nav-container">
+        <a href="aboutme.html" class="hover-button button"><h6 class="nav-menu">About me</h6></a>
+        <div class="hover-animation-container">
+          <img src="homepagePic/hover.png" alt="" class="hover-img">
+          <a href="aboutme.html" class="hover-button button"><h6 class="nav-menu">About me</h6></a>
+        </div>
+      </div>
+      <div class="hovered-nav-container">
+        <a href="homepagePic/CV_SupraveeVorasettakarnkij.pdf" target="_blank" rel="noopener noreferrer" class="hover-button button"><h6 class="nav-menu">Download CV</h6></a>
+        <div class="hover-animation-container">
+          <img src="homepagePic/hover.png" alt="" class="hover-img">
+          <a href="homepagePic/CV_SupraveeVorasettakarnkij.pdf" target="_blank" rel="noopener noreferrer" class="hover-button button"><h6 class="nav-menu">Download CV</h6></a>
+        </div>
+      </div>
+    </div>
+</nav>
+<body>
       <div class="container-fluid">
         <!-- <div class="CShero">
             <img src="moneyshare/herobgpicture.jpg" alt="" class="background-img">
@@ -91,7 +110,7 @@
                         <h3 class="headline">1/6 Research Insights</h3>
     
                         <div class="content">
-                            <h6>Based on interviews: when can be better when you shop during pandemic?</h6>
+                            <h6 class="headline-title">Based on interviews: when can be better when you shop during pandemic?</h6>
                             <!--- add container and put all the bullet point in card form--> 
                             <ul>
                                 <li>Customer A: Professional beauty consultant fee is quite expensive. Sometimes, the beauty parlor and beauty consultant business cannot open due to government policy to prevent a pandemic.</li>
@@ -103,7 +122,7 @@
                     </div>
                     
                     <div class="list">
-                        <h5>Market Research: Beauty Industry in a nutshell</h5>
+                        <h6 class="headline-title">Market Research: Beauty Industry in a nutshell</h6>
                         <ul>
                             <li>The growth of the cosmetics industry worldwide on the rise.</li>
                             <li>Beauty market is projected to reach up to USD 500 billion by 2023.</li>
@@ -123,16 +142,18 @@
                                 <li class="col card">58% of consumers are willing to spend higher on better-quality products from the perception that the higher price, the higher quality.</li>
                                 <li class="col card ml-4">74% of the total cosmetics retail sales are from online retails.</li>
                             </ul>
-                            <br>
+                            
                         </div>
                     </div>
                 </div>
+                <br>
 
                 <!--- 2/7 Define Problem--> 
                 <div class="defineProblem">
                     <h3 class="headline">2/6 Define Problem</h3>
                     <div class="HMW card-container">
-                        <h6>How Might We create product or service to enhance the online shopping experience to be more personal and have a way for brands to communicate with customers to increase L’Oreal’s revenue stream and make L’Oreal be the go-to brand of the Chinese population.</h6>
+                        <h3 class="headline-title">HMW Statement</h3>
+                        <h3 class="headline">How Might We create product or service to enhance the online shopping experience to be more personal and have a way for brands to communicate with customers to increase L’Oreal’s revenue stream and make L’Oreal be the go-to brand of the Chinese population.</h3>
                     </div>
                     <br> <br>
                 </div>
@@ -141,7 +162,7 @@
                 <div class="ideate">
                     <div >
                         <h3 class="headline">3/6 Ideate</h3>
-                            <h6>User Personas</h6>
+                            <h6 class="headline-title">User Personas</h6>
                             <img class="img-fluid rounded mx-auto d-block"  src="beaunity/persona.jpg" alt="User Personas for Beaunity">
                             <div class="d-flex justify-content-center">
                                 <figcaption>User Personas for Beaunity </figcaption>
@@ -215,17 +236,17 @@
                     <h6 class="headline-title">Final feature of the application</h6>
                     <img class="img-fluid rounded mx-auto d-block" src="Beaunity/feature-shopping.png" alt="System Architecture for Beaunity">
                     <div class="d-flex justify-content-center">
-                        <figcaption>#1 Detail feature for Beaunity </figcaption>
+                        <figcaption>Detail feature of E-commerce section</figcaption>
                     </div>
                     <br>
                     <img class="img-fluid rounded mx-auto d-block" src="Beaunity/feature-social.png" alt="System Architecture for Beaunity">
                     <div class="d-flex justify-content-center">
-                        <figcaption>#2 Detail feature for Beaunity </figcaption>
+                        <figcaption>Detail feature of Social Platform section</figcaption>
                     </div>
                     <br>
                     <img class="img-fluid rounded mx-auto d-block" src="Beaunity/feature-tech.png" alt="System Architecture for Beaunity">
                     <div class="d-flex justify-content-center">
-                        <figcaption>#3 Detail feature for Beaunity </figcaption>
+                        <figcaption>Detail feature of Innovative section</figcaption>
                     </div>
 
                     <br><br>

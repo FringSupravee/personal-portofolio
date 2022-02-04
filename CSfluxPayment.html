@@ -5,23 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flux Payment</title>
+    <link rel="icon" href="homepagePic/favicon.ico">
     <link rel="stylesheet" href="CSmoneyshare.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand justify-content-between">
-        <div></div>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active mr-4" href="homepage.html">Home</a>
-          <a class="nav-item nav-link mr-2" href="aboutme.html">About me</a>
-          <a class="nav-item nav-link mr-2" href="<!-- file-->  download">Download my CV</a>
+<nav class="nav-container">
+    <div class="nav-img-container">
+      <img src="homepagepic/logo2.png" alt="" class="nav-img">
+    </div>
+    <div class="nav-links-container">
+      <div class="hovered-nav-container">
+        <a href="homepage.html" class="hover-button button"><h6 class="nav-menu">Home</h6></a>
+        <div class="hover-animation-container">
+          <img src="homepagePic/hover.png" alt="" class="hover-img">
+          <a href="homepage.html" class="hover-button button"><h6 class="nav-menu">Home</h6></a>
         </div>
-    </nav>
-
-
+      </div>
+      <div class="hovered-nav-container">
+        <a href="aboutme.html" class="hover-button button"><h6 class="nav-menu">About me</h6></a>
+        <div class="hover-animation-container">
+          <img src="homepagePic/hover.png" alt="" class="hover-img">
+          <a href="aboutme.html" class="hover-button button"><h6 class="nav-menu">About me</h6></a>
+        </div>
+      </div>
+      <div class="hovered-nav-container">
+        <a href="homepagePic/CV_SupraveeVorasettakarnkij.pdf" target="_blank" rel="noopener noreferrer" class="hover-button button"><h6 class="nav-menu">Download CV</h6></a>
+        <div class="hover-animation-container">
+          <img src="homepagePic/hover.png" alt="" class="hover-img">
+          <a href="homepagePic/CV_SupraveeVorasettakarnkij.pdf" target="_blank" rel="noopener noreferrer" class="hover-button button"><h6 class="nav-menu">Download CV</h6></a>
+        </div>
+      </div>
+    </div>
+</nav>
+<body>
       <div class="container-fluid">
         <!-- <div class="CShero">
             <img src="moneyshare/herobgpicture.jpg" alt="" class="background-img">
@@ -107,18 +126,18 @@
                                     <li class="col card mr-4">76% of respondents pay at least 30% of their expenses with credit. <br> </li>
                                     <li class="col card">97% of respondents are willing to pay bills early if incentivized. <br></li>
                                 </ul>
-                                <br>
                             </div>
                         </div>
                     </div>
                     
                 </div>
-
+                <br><br>
                 <!--- 2/7 Define Problem--> 
                 <div class="defineProblem">
                     <h3 class="headline">2/5 Define Problem</h3>
                     <div class="HMW card-container">
-                        <h6>How might we design a trusting, incentivized, and better experience for everyone involved in the bill payment process.</h6>
+                        <h6 class="headline-title">HMW Statement</h6>
+                        <h3 class="headline">How might we design a trusting, incentivized, and better experience for everyone involved in the bill payment process.</h3>
                     </div>
                     <br> <br>
                 </div>
@@ -159,13 +178,14 @@
 
                 <!--- 4/5 sitemap--> 
                 <div class="ideate">
-                    <h3 class="headline">4/5 System Architecture</h3>
+                    <h3 class="headline">4/5 System Architecture & User Flow</h3>
+                    <h6 class="headline-title">System Architecture</h6>
                     <img class="img-fluid rounded mx-auto d-block" src="Flux/sitemap.jpg" alt="Sketch for Beaunity">
                     <div class="d-flex justify-content-center">
                         <figcaption>System Architecture</figcaption>
                     </div>
                     <br>
-                    <h6>User Flow</h6>
+                    <h6 class="headline-title">User Flow</h6>
                     <ol>
                         <li>Bill trackers and reminders: Receive notification on the phone → Log-in → Check bill payments on Home page → Click to see detail of the bills → Approve the bill payments → Select preferred payment method → Paid successfully → Check the Flux point</li>
                         <img class="img-fluid rounded mx-auto d-block" src="Flux/UserFlowBillTracker.png" alt="System Architecture for Beaunity">
@@ -176,20 +196,21 @@
                     <br><br>
                 </div>
 
-                <!--- 7/7 Conclusion--> 
+                <!--- 5 Conclusion--> 
                 <div class="conclusion">
                     <h3 class="headline">5/5 Conclusion</h3>
-                    <h6>Final feature of the application</h6> <br>
+                    <h6 class="headline-title">Final feature of the application</h6> <br>
                     <div class="feature">
-                        <h6>Onboarding customers</h6>
+                        <h5>Onboarding customers</h5>
                         <ul>
                             <li>Design fast onboarding to register an account to create an account.</li>
                             <li>Make customer support chat easy to access.</li>
                             <li>Inform the user about the upcoming steps.</li>
                         </ul>
                     </div>
+                    <br>
                     <div class="feature">
-                        <h6>Monthly bills' tracker and reminder</h6>
+                        <h5>Monthly bills' tracker and reminder</h5>
                         <ul>
                             <li>Visualize the monthly spending into charts, which customers can compare each month's spending.</li>
                             <li>Provide detail on each bill before making payment.</li>
@@ -197,8 +218,9 @@
                             <li>Notify once receiving the bills and dates that they need to pay.</li>
                         </ul>
                     </div>
+                    <br>
                     <div class="feature">
-                        <h6>Coupon redemption</h6>
+                        <h5>Coupon redemption</h5>
                         <ul>
                             <li>Add the distance and navigation of its nearest shop to the users.</li>
                             <li>Separate coupons and stores into different categories.</li>
@@ -210,7 +232,7 @@
 
                     <img class="img-fluid rounded mx-auto d-block" src="Flux/finalpicture.png" alt="">
                     <br>
-                    <h6>What have I learned?</h6>
+                    <h6 class="headline-title">What have I learned?</h6>
                     <ol>
                         <li>Work with a team of multidisciplinary in an international setting.</li>
                         <li>Communication and cross-work between design and business development team.</li>

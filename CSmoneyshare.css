@@ -1,41 +1,33 @@
 * {
     margin: 0;
     color: #111d13;
-    line-height: 2;
+   
     text-align: left;
     font-family: 'Poppins', sans-serif;
     white-space: normal;
   }
-
-
   
-  .navbar-nav, nav {
-      background-color: #FFFCDF;
-      color: #111d13;
-  }
-
-  .col-9 {
-      background-color: #FEFBF6;
-      padding: 100px;
-  }
 
   h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+    line-height: 2;
   }
 
   a {
     color: #111d13;
+    line-height: 2;
   
   }
   
   .content {
     font-size: 1.3rem;
+    line-height: 2;
 }
 
 
   figcaption, .caption {
-      
+    line-height: 2;
       font-size: smaller;
   }
  
@@ -66,7 +58,7 @@
 }
 
 .stickyContent, .case-study {
-
+    
     font-size: 1.3rem;
     font-weight: 400;
 }
@@ -91,6 +83,10 @@
     font-size: 3vh;
 }
 
+ul, ol, ,li {
+    padding: 2rem;
+}
+
 .card-container {
     background-color: rgb(250, 234, 236);
     border-radius: 10px;
@@ -102,6 +98,7 @@
     color: #C81676;
     margin-bottom: 2rem;
     font-weight: 600;
+    line-height: 2;
 }
 .headline-title {
     margin-bottom: 2rem;
@@ -117,6 +114,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+  /*expand image*/
 
   img {
     transition:transform 0.25s ease;
@@ -124,9 +122,86 @@
 
 
 img:hover {
-    -webkit-transform:scale(1.5); /* or some other value */
-    transform:scale(1.5);
+    -webkit-transform:scale(1.2); /* or some other value */
+    transform:scale(1.2);
 }
 
+
+/* Nav */
+.nav-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #FFFCDF;
+  }
+  .nav-img-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 2rem;
+    background-color: #FFFCDF;
+  }
+  .nav-img {
+    max-height: 100%;
+    width: auto;
+    background-color: #FFFCDF;
+  }
+  .nav-links-container {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: space-around;
+    background-color: #FFFCDF;
+  }
+  .hovered-nav-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFCDF;
+  }
+  .nav-menu {
+    color: #C81676;
+    background-color: #FFFCDF;
+  }
+  /* Hover Animation CSS */
+  .hovered-button-container {
+    position: relative;
+    height: 5rem;
+    max-width: 12rem;
+  }
+  
+  .hover-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  
+  .hover-button:hover {
+    text-decoration: none;
+  }
+  
+  .hover-button:hover + .hover-animation-container {
+    opacity: 1;
+  }
+  
+  .hover-animation-container {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+    transition: all ease-in-out 0.2s;
+  }
+  
+  .hover-img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
 
   
