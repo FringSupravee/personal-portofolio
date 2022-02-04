@@ -4,24 +4,39 @@
     line-height: 2;
     text-align: left;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: medium;
     white-space: normal;
   }
+
+
   
   .navbar-nav, nav {
       background-color: #FFFCDF;
       color: #111d13;
   }
 
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+  .col-9 {
+      background-color: #FEFBF6;
+      padding: 100px;
   }
 
-  h3, h5 {
-      color: #C81676;
-      font-weight: 700;
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+
+  a {
+    color: #111d13;
+  
+  }
+  
+  .content {
+    font-size: 1.3rem;
+}
+
+
+  figcaption, .caption {
+      
+      font-size: smaller;
   }
  
 .CShero {
@@ -51,24 +66,67 @@
 }
 
 .stickyContent, .case-study {
+
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.CSname-sticky-top {
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 5vh;
+    color: white;
+    font-weight: 500;
+}
+
+.col-3 {
     background-color: #D8C68D;
 }
 
+
 .nextpage {
     position: fixed;
-    bottom: 1rem;
+    bottom: 2rem;
+    font-style: normal;
+    font-size: 3vh;
 }
 
 .card-container {
-    background-color: lightgray;
+    background-color: rgb(250, 234, 236);
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 2rem;
 }
 .headline {
-    font-size: .8rem;
+    font-size: 1.8rem;
+    color: #C81676;
+    margin-bottom: 2rem;
+    font-weight: 600;
 }
 .headline-title {
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
+
+.lineBreak {
+    margin-top: 10%;
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    transition:transform 0.25s ease;
+    }
+
+
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+
+  
