@@ -41,10 +41,20 @@
     </div>
     </div>
   </div>
+  <div class="nav-burger" id="nav-burger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div class="nav-options-container" id="nav-options-container">
+    <a href="index.html" class="button"><h6 class="nav-menu">Home</h6></a>
+    <a href="aboutme.html" class="button"><h6 class="nav-menu">About me</h6></a>
+    <a href="homepagePic/CV_SupraveeVorasettakarnkij.pdf" target="_blank" rel="noopener noreferrer" class="button"><h6 class="nav-menu">Download CV</h6></a>
+  </div>
 </nav>
 <body>
     <div class="self-intro">
-        <h1>Hi, I’m Fring <br>
+        <h1 class="intro-title">Hi, I’m Fring <br>
             Nice to meet you! <br>
             Oh right, my full name? <br>
             <i>Supravee Vorasettakarnkij,</i><br>
@@ -52,16 +62,16 @@
         </h1>
         <br>
         <div class="row">
-          <div class="col-5">
-            <h6>
-              I believe that everything starts with design. <br> Good design will fuel your business to success
+          <div class="col-lg-5 special-description-container">
+            <h6 class="special-description">
+              I believe that everything starts with design. <br> Good design will fuel your business to success.
               <br><br>
-              <a href="#work"><h5><u>Jump to see my work</u>↓</h5></a>
+              <a href="#work"><h5 class="mobile-text-center mb-4"><u>Jump to see my work</u>↓</h5></a>
             </h6>
           </div>
-          <div class="col-7">
+          <div class="col-lg-7">
             <img class="self-intro-picture" src="homepagePic/picture.png" alt="Self-intro picture" style="width: 100%;">
-            <h6 class="col-10">Born in Bangkok, Thailand and stayed in Berlin for a while. Currently moved to Hong Kong. Have been producing my crafts since 1999. Then exactly 20 years later, I started my journey as a self-taught product designer. In my free time, I love good bakery, meseum-hopping, travelling and photography. </h6>
+            <h6 class="col-12 text-justify line-height">Born in Bangkok, Thailand and stayed in Berlin for a while. Currently moved to Hong Kong. Have been producing my crafts since 1999. Then exactly 20 years later, I started my journey as a self-taught product designer. In my free time, I love good bakery, meseum-hopping, travelling and photography. </h6>
           </div>
 
         </div>
@@ -71,7 +81,7 @@
     </div>
 
     <div class="work">
-        <h3 class="my-work-text" id="work">Scroll down to see my Works.</h3>
+        <h3 class="my-work-text text-center" id="work">Scroll down to see my work.</h3>
         
         <!--- Moneyshare  --->
         <div class="caseStudy">
@@ -90,7 +100,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-lg-8">
+                  <div class="col-sm-6 col-lg-8">
                     <a href="CSmoneyshare.html">
                       <img class="caseStudyPicture img-fluid" src="homepagePic/moneyshare home picture.png" alt="">
                     </a>
@@ -108,7 +118,7 @@
                       <img class="caseStudyPicture img-fluid" src="homepagePic/sexed.png" alt="">
                     </a>
                   </div>
-                  <div class="col-6 col-lg-4">
+                  <div class="col-sm-6 col-lg-4">
                     <h1>I-Ed-Sex</h1>
                     <p>Market research - User Analysis - Information Architecture - Prototype</p>
                     <h5>Improve Hong Kong's Sex Education scene to prevent early pregnancy and STDs and increase awareness of gender identity and sexual taboo.</h5>
@@ -141,7 +151,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-8">
+                <div class="col-sm-6 col-lg-8">
                   <a href="CSmBrace.html">
                     <img class="caseStudyPicture img-fluid" src="homepagePic/mbrace.png" alt="">
                   </a>
@@ -158,7 +168,7 @@
                     <img class="caseStudyPicture img-fluid" src="homepagePic/ampd.png" alt="">
                   </a>
                 </div>
-                <div class="col-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4">
                   <h1>AMPD Energy</h1>
                   <p>Design System - High-fidelity Prototype - Usability Test</p>
                   <h5>Product designer's diary for updating the AMPD's energy analytical & monitoring dashboard to fulfill the after-sale exprience for greener future.</h5>
@@ -191,7 +201,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-lg-8">
+            <div class="col-sm-6 col-lg-8">
               <a href="CSfluxPayment.html">
                 <img class="caseStudyPicture img-fluid" src="homepagePic/flux.png" alt="">
               </a>
@@ -209,7 +219,7 @@
                 </a>
               </div>
 
-              <div class="col-6 col-lg-4">
+              <div class="col-sm-6 col-lg-4">
                 <h1>Beaunity</h1>
                 <p>Market research - User Analysis - Information Architecture  - Prototype</p>
                 <h5>One-stop-service for e-commerce and socila media platform for beauty community.</h5>
@@ -243,7 +253,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 col-lg-8">
+            <div class="col-sm-6 col-lg-8">
               <a href="CSstorius.html">
                 <img class="caseStudyPicture img-fluid" src="homepagePic/storius.png" alt="">
               </a>
@@ -256,16 +266,17 @@
 </body>
 <footer>
   <div class="row">
-    <div class="col-10">
-      <h3>Fuel with good idea? <br> 
+    <div class="col-sm-12 col-lg-10 mobile-items-center">
+      <h3>Fueled with good ideas? <br> 
         <i>Let's Chat</i></h3>
     </div>
 
-    <div class="footer-link col-2 text-right">
+    <div class="footer-link col-lg-2 col-sm-12 text-right mobile-flex">
       <a href="https://www.linkedin.com/in/supravee-vorasettakarnkij/" target="_blank" rel="noopener noreferrer"> <u>LinkedIn</u> </a> <br>
       <a href="mailto: spv99.work@gmail.com" target="_blank" rel="noopener noreferrer"> <u>Email</u> </a> <br>
       <a href="https://www.instagram.com/ffringgg/" target="_blank" rel="noopener noreferrer"> <u>Instagram</u> </a> <br>
     </div>
   </div>
 </footer>
+<script src="script.js"></script>
 </html>

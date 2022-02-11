@@ -20,9 +20,8 @@ i {
 
 h2,
 h4,
-h5, 
-H6 
- {
+h5,
+h6 {
   font-weight: 200;
   color: #111d13;
 }
@@ -33,13 +32,13 @@ a {
   color: #111d13;
 }
 
-.self-intro, .my-work-text {
+.self-intro,
+.my-work-text {
   padding: 50px;
-  /* margin-bottom: 50px; */
 }
 
 .my-work-text {
-  color: #C81676;
+  color: #c81676;
 }
 
 h1.self-intro {
@@ -58,7 +57,7 @@ h1.self-intro {
   display: block;
   margin-left: auto;
   width: 100%;
-  height: auto%;
+  height: auto;
   margin-bottom: 50px;
 }
 
@@ -70,9 +69,8 @@ h1.self-intro {
   margin-left: auto;
   margin-right: auto;
 }
-.my-work-text{
-  padding-left: 50px;
-
+.line-height {
+  line-height: 1.5rem;
 }
 footer {
   padding-left: 30px;
@@ -86,38 +84,38 @@ footer {
 }
 /* Nav */
 .nav-container {
-  width: 100%;
+  max-width: 100%;
   height: 10vh;
   display: flex;
-  background-color: #FFFCDF;
+  background-color: #fffcdf;
 }
 .nav-img-container {
   width: 100%;
   height: 100%;
   padding-left: 2rem;
-  background-color: #FFFCDF;
+  background-color: #fffcdf;
 }
 .nav-img {
   max-height: 100%;
   width: auto;
-  background-color: #FFFCDF;
+  background-color: #fffcdf;
 }
 .nav-links-container {
   display: flex;
   width: 60%;
   height: 100%;
   justify-content: space-around;
-  background-color: #FFFCDF;
+  background-color: #fffcdf;
 }
 .hovered-nav-container {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: #FFFCDF;
+  background-color: #fffcdf;
 }
 .nav-menu {
-  color: #C81676;
-  background-color: #FFFCDF;
+  color: #c81676;
+  background-color: #fffcdf;
 }
 /* Hover Animation CSS */
 .hovered-button-container {
@@ -158,4 +156,102 @@ footer {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+.nav-options-container {
+  display: none;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 540px) {
+  .my-work-text {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    padding: 0;
+  }
+
+  .self-intro {
+    padding: 30px 30px 0 30px;
+  }
+  .intro-title {
+    font-size: 1.8rem;
+  }
+  .special-description {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  .mobile-text-center {
+    text-align: center;
+  }
+  .hovered-button-container {
+    position: relative;
+    height: 5rem;
+    max-width: 12rem;
+    margin: auto;
+  }
+  .caseStudy .container {
+    margin-top: 2rem;
+  }
+  .mobile-flex {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+  .nav-links-container {
+    display: none;
+    pointer-events: none;
+  }
+
+  /* Navbar burger */
+  .nav-burger {
+    background-color: #fffcdf;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .nav-options-container {
+    pointer-events: none;
+    transition: 0.4s;
+    opacity: 0;
+    display: flex;
+    pointer-events: all;
+    flex-direction: column;
+    background-color: #fffcdf;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .add-nav {
+    pointer-events: all;
+    opacity: 1;
+  }
 }
