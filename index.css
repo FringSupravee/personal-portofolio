@@ -162,6 +162,24 @@ footer {
   pointer-events: none;
 }
 
+.password-input, .password-page {
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+  border: solid;
+}
+
+input {
+  border: 3px solid #C81676;
+  border-radius: 10px;
+  padding-left: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/* MOBILE ONLY */
 @media screen and (max-width: 540px) {
   .my-work-text {
     font-size: 1.4rem;
