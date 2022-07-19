@@ -161,7 +161,7 @@ img:hover {
 .hovered-button-container {
   position: relative;
   height: 5rem;
-  max-width: 12rem;
+  width: 15rem;
 }
 
 .hover-button {
