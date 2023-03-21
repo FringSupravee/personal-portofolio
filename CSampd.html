@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enernet by Ampd Energy</title>
     <link rel="stylesheet" href="CSmoneyshare.css">
+    <!-- use if there is password -->
+        <link rel="stylesheet" href="loader.css">
+        <link rel="stylesheet" href="passwordComponent.css">
+    <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -52,7 +56,37 @@
     </div>
   </nav>
 <body>
-      <div class="container-fluid">
+    <!-- password component -->
+    <div id="password-form">
+        <div class="password-page">
+            <h1 >Oops, you need a pass to enter<br>
+            </h1>
+            <br>
+            <div class="hovered-button-container">
+                <a href="mailto:spv99.work@gmail.com" class="hover-button button"><b>Email me if you're interested</b></a>
+                <div class="hover-animation-container">
+                <img src="homepagePic/hover.png" alt="" class="hover-img">
+                <a href="mailto:spv99.work@gmail.com" class="hover-button button"><b>Email me if you're interested</b></a>
+                </div>
+            </div>
+            <br>
+            <div class="hidden-content" id="loader-component">
+                <div class="lds-circle"><div></div></div>
+                <br>
+                <br>
+            </div>
+            <div class="password-input">
+                <label for="password"></label><input id="password-form-input" type="password" name="password" placeholder="password here :)"/>
+                
+                <div class="hovered-button-container">
+                    <button class="hover-button button" id="password-submit-button">➡️</button>
+                </div>
+            </div>
+        </div>
+        <img class="lineBreak-no-margin" src="homepagePic/line doodle.png" alt="Self-intro picture" />
+        <br>
+    </div>
+      <div class="container-fluid hidden-content" id="password-protected-content">
         <!-- <div class="CShero">
             <img src="moneyshare/herobgpicture.jpg" alt="" class="background-img">
             <h1 class="hero-title"> Ease the process of sharing and splitting the bills</h1>
@@ -365,4 +399,7 @@
       
 </body>
 <script src="script.js"></script>
+<!-- use if there is password -->
+    <script src="passwordProtect.js"></script>
+<!--  -->
 </html>
